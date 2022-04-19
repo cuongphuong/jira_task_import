@@ -1,0 +1,39 @@
+{
+    "name": "JIRA IMPORT!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "CuongPV10",
+    "background": {
+        "service_worker": "background.min.js"
+    },
+    "action": {
+        "default_title": "JIRA IMPROT!",
+        "default_icon": "img/ex_logo.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "static/js/moment.min.js",
+                "content_script.min.js",
+                "function/bug/bug_import.min.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "512": "img/ex_logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting",
+        "tabs",
+        "activeTab",
+        "contextMenus",
+        "notifications"
+    ]
+}

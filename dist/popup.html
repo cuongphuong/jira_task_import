@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="popup description" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <title>POPUP</title>
+    <link href="/static/css/popup.css" rel="stylesheet">
+</head>
+
+<body style="width: 200px; height: 310px; box-sizing: border-box;">
+    <div id="root" style="height: 55px; border-bottom: solid 1px #ddd;">
+        <img id="wait_id" width="50px" />
+        <div id="head_config"></div>
+    </div>
+
+    <div id="content">
+        <div id="collect_info" style="display: none;">
+            <p>Total row on this sheet<br><span id="total_record">n/a</span> record</p>
+            <p>Row ready to create<br><span id="record_create">n/a</span> record</p>
+            <p>Row ready to update<br><span id="record_update">n/a</span> record</p>
+            <p>Error record<br><span id="record_err">n/a</span> record</p>
+        </div>
+
+        <div id="collect_progress" style="display: none;">
+            <p><span id="process_info"><img id="well_come_id" width="150px" src="img/welcome.png"></span></p>
+        </div>
+    </div>
+
+    <ul id="fixed_menu">
+        <li id="review_tab_id" style="color: red">Review</li>
+        <li id="reload_tab_id">Reload</li>
+        <li id="settings_tab_id">Settings</li>
+    </ul>
+    <script src="popup.min.js"></script>
+</body>
+
+</html>

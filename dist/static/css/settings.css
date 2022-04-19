@@ -1,0 +1,26 @@
+textarea,
+pre {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+.d_settings h2 {
+    font-size: 20px;
+}
+
+.setting_block textarea {
+    width: 100%;
+    height: calc(100vh - 100px);
+    font-family: Consolas;
+}
+
+.setting_file {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.file_input {
+    display: none;
+}

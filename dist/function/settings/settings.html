@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/w3.css">
+<link rel="stylesheet" href="/static/css/settings.css">
+
+<body>
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+        <h5 class="w3-bar-item">Settings</h5>
+        <button id="main_settings" class="w3-bar-item w3-button tablink">Common</button>
+        <button id="tab1_settings" class="w3-bar-item w3-button tablink">BUG</button>
+        <button id="tab2_settings" class="w3-bar-item w3-button tablink">API (dev)</button>
+    </div>
+
+    <div style="margin-left:130px; position: relative;">
+        <div class="w3-padding">Jira Log Settings (Version 1.0 - CuongPV10)</div>
+
+        <div class="setting_file">
+            <button id="btn_save">Save</button>
+            <button id="btn_import">Import</button>
+            <button id="btn_export">Export</button>
+            <input type="file" id="import_file" class="file_input" />
+            <a download="settings.json" target="_blank" id="download_link" style="display: none;"></a>
+        </div>
+
+        <div id="d_main_settings" class="w3-container d_settings" style="display:none">
+            <h2>Common settings</h2>
+            <div class="setting_block">
+                <textarea id="main_setting_input"></textarea>
+            </div>
+        </div>
+
+        <div id="d_tab1_settings" class="w3-container d_settings" style="display:none">
+            <h2>Bug config</h2>
+            <div class="setting_block">
+                <textarea id="bug_settings_input"></textarea>
+            </div>
+        </div>
+
+        <div id="d_tab2_settings" class="w3-container d_settings" style="display:none">
+            <h2>API</h2>
+            <div class="setting_block">
+                <textarea id="api_settings_input"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="/function/settings/settings.min.js"></script>
+    <script src="/function/settings/settings_import.min.js"></script>
+</body>
+
+</html>
